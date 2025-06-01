@@ -1,5 +1,24 @@
 const themeToggle = document.getElementById('toggleTheme');
 const themeIcon = document.getElementById('themeIcon');
+const manege = document.getElementById('mane')
+const transf = document.getElementById('trans')
+const button = document.querySelector('.btn')
+const button1 = document.getElementById('btn')
+
+button1.addEventListener('click', function(){
+    transf.innerHTML  = 'Sua transferencia foi enviada, obrigado!'
+     setTimeout(function(){
+        location.reload()
+    }, 5000)
+})
+
+button.addEventListener('click', function(){
+    manege.innerHTML = 'Seu Saldo é de: R$1.524.847,00'
+
+    setTimeout(function(){
+        location.reload()
+    }, 5000)
+})
 
 themeToggle.addEventListener('click', function(){
   document.body.classList.toggle('light-mode');
